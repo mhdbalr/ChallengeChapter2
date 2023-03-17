@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/button22"
-        android:layout_width="420dp"
-        android:layout_height="61dp"
+        android:layout_width="818dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="17dp"
         android:text="Tip Time"
         android:textColor="@color/putih"
@@ -19,6 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/button2"
@@ -38,17 +39,17 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="411dp"
-        android:layout_height="277dp"
+        android:layout_width="417dp"
+        android:layout_height="343dp"
         android:layout_marginTop="54dp"
         android:layout_marginBottom="48dp"
         android:background="@drawable/img_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button2"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.965">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -59,24 +60,25 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="426dp"
-        android:layout_height="0dp"
+        android:layout_width="475dp"
+        android:layout_height="57dp"
         android:src="@drawable/img_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 
     <EditText
         android:id="@+id/idTextCostOfService"
-        android:layout_width="209dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="223dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
         android:hint="Cost of Service"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/idTextService"
@@ -89,29 +91,29 @@
 
     <RadioGroup
         android:id="@+id/idRadioGroup"
-        android:layout_width="193dp"
-        android:layout_height="77dp"
+        android:layout_width="182dp"
+        android:layout_height="100dp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="@id/idTextService"
         app:layout_constraintTop_toBottomOf="@id/idTextService">
 
         <RadioButton
             android:id="@+id/idButtonAmazing"
-            android:layout_width="142dp"
-            android:layout_height="23dp"
+            android:layout_width="148dp"
+            android:layout_height="32dp"
             android:checked="true"
             android:text="Amazing (20%)" />
 
         <RadioButton
             android:id="@+id/idButtonGood"
-            android:layout_width="wrap_content"
-            android:layout_height="27dp"
+            android:layout_width="121dp"
+            android:layout_height="37dp"
             android:text="Good (18%)" />
 
         <RadioButton
             android:id="@+id/idOK"
-            android:layout_width="110dp"
-            android:layout_height="28dp"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
             android:text="OK (15%)" />
     </RadioGroup>
 
@@ -132,17 +134,18 @@
         android:id="@+id/idCountUpTip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
         android:text="Rount up tip?"
         app:layout_constraintStart_toStartOf="@id/idRadioGroup"
         app:layout_constraintTop_toBottomOf="@id/idRadioGroup" />
 
     <Switch
         android:id="@+id/idSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="70dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
         android:checked="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/idRadioGroup" />
