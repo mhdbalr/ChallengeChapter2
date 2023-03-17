@@ -6,10 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="420dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="17dp"
+        android:text="Tip Time"
+        android:textColor="@color/putih"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idTextCostOfService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="374dp"
+        android:layout_width="414dp"
         android:layout_height="51dp"
         android:layout_marginTop="235dp"
         android:layout_marginBottom="301dp"
@@ -25,8 +38,8 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="361dp"
-        android:layout_height="284dp"
+        android:layout_width="411dp"
+        android:layout_height="277dp"
         android:layout_marginTop="54dp"
         android:layout_marginBottom="48dp"
         android:background="@drawable/img_3"
@@ -54,10 +67,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
 
+
     <EditText
         android:id="@+id/idTextCostOfService"
-        android:layout_width="194dp"
-        android:layout_height="41dp"
+        android:layout_width="209dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="68dp"
         android:hint="Cost of Service"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -67,35 +82,36 @@
         android:id="@+id/idTextService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="How was the service?"
         app:layout_constraintStart_toStartOf="@id/idTextCostOfService"
         app:layout_constraintTop_toBottomOf="@id/idTextCostOfService" />
 
     <RadioGroup
         android:id="@+id/idRadioGroup"
-        android:layout_width="184dp"
-        android:layout_height="152dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="193dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="@id/idTextService"
         app:layout_constraintTop_toBottomOf="@id/idTextService">
 
         <RadioButton
             android:id="@+id/idButtonAmazing"
-            android:layout_width="136dp"
-            android:layout_height="wrap_content"
+            android:layout_width="142dp"
+            android:layout_height="23dp"
             android:checked="true"
             android:text="Amazing (20%)" />
 
         <RadioButton
             android:id="@+id/idButtonGood"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="27dp"
             android:text="Good (18%)" />
 
         <RadioButton
             android:id="@+id/idOK"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="28dp"
             android:text="OK (15%)" />
     </RadioGroup>
 
@@ -106,13 +122,30 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="290dp"
         android:text="Tip Amount"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.0"
-        android:textColorHint="@color/black"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/idCountUpTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Rount up tip?"
+        app:layout_constraintStart_toStartOf="@id/idRadioGroup"
+        app:layout_constraintTop_toBottomOf="@id/idRadioGroup" />
+
+    <Switch
+        android:id="@+id/idSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idRadioGroup" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
